@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/release_sell"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ecf0f1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/actionbar"
+            android:padding="0dp"
+            android:tag="actionBar" >
+
+            <TextView
+                android:id="@+id/select_back"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="@drawable/text_down_selector"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_action_up_home"
+                android:gravity="center"
+                android:text="@string/get_take_picture_task"
+                android:textColor="@color/tetx_title_color"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/getTaskBtn"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/released_nextbtn_selector"
+                android:text="@string/gettask_gettaskbtn"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                tools:ignore="UselessLeaf" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/released_sell_area_name"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/sell_area_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:background="@drawable/textview_selector"
+                        android:gravity="center|left"
+                        tools:ignore="TextFields" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="82dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/released_sell_describe"
+                        android:textColor="@color/released_sell_xtitle_text"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent" >
+
+                    <TextView
+                        android:id="@+id/sell_seat"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/released_sell_seat_number"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/sell_seat_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/textview_selector"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="text"
+                        android:maxLength="8"
+                        tools:ignore="TextFields,Deprecated" />
+
+                    <CheckBox
+                        android:id="@+id/task_single_building"
+                        android:layout_width="80dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/get_task_building"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="82dp"
+                        android:text="@string/gettask_util_building"
+                        android:textColor="@color/released_sell_xtitle_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/unit_number_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent" >
+
+                    <TextView
+                        android:id="@+id/unit_no_tv"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/released_sell_unit_no"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/unit_no_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/unit_no_tv"
+                        android:layout_weight="2"
+                        android:background="@drawable/textview_selector"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:maxLength="8"
+                        tools:ignore="TextFields,Deprecated,ObsoleteLayoutParam" />
+
+                    <CheckBox
+                        android:id="@+id/task_unit_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:text="@string/released_unit_single_building"
+                        tools:ignore="ObsoleteLayoutParam" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/unit_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="82dp"
+                        android:text="@string/gettask_util_unit"
+                        android:textColor="@color/released_sell_xtitle_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/released_sell_room_no"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/room_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/textView2"
+                        android:background="@drawable/textview_selector"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:ems="10"
+                        android:maxLength="8"
+                        tools:ignore="TextFields,Deprecated" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="82dp"
+                        android:text="@string/gettask_menpai_msg"
+                        android:textColor="@color/released_sell_xtitle_text"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mine_loadding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/actionbar"
+            android:padding="0dp"
+            android:tag="actionBar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/mine_home_titile"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/mine_bonus"
+                        android:textColor="#7f7f7f"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/mine_select"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/bonus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="15dp"
+                            android:background="#FF4404"
+                            android:gravity="center"
+                            android:minWidth="20dp"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/mine_bonus"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_toLeftOf="@+id/bonus"
+                            android:background="@drawable/mine_select"
+                            android:gravity="center_vertical"
+                            android:text="@string/bonus"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+                    <RelativeLayout
+                        android:id="@+id/alipy_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mine_select"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/AliPay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_toRightOf="@+id/mine_AliPay"
+                            android:gravity="center_vertical"
+                            android:maxLength="20"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/modification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="16dp"
+                            android:gravity="center_vertical"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/mine_AliPay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/mine_select"
+                            android:gravity="center_vertical"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mine_bank_card_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mine_select"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/bank_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_toRightOf="@+id/mine_bank_card"
+                            android:gravity="center_vertical"
+                            android:maxLength="20"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/modification_bank_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="16dp"
+                            android:gravity="center_vertical"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/mine_bank_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/mine_select"
+                            android:gravity="center_vertical"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="40dp"
+
+                        android:gravity="center_vertical"
+                        android:text="@string/mine_phone_number"
+                        android:textColor="#7f7f7f"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/my_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/mine_select"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:id="@+id/modification_mine_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toLeftOf="@+id/mine_phone_number"
+                            android:gravity="center"
+                            android:minWidth="20dp"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+
+                            android:id="@+id/mine_phone_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/mine_select"
+                            android:gravity="center_vertical"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/mine_select"
+                        android:gravity="center_vertical"
+                        android:text="@string/bank_card_info"
+                        android:textColor="#7f7f7f"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/mine_select"
+                        android:gravity="center_vertical"
+                        android:text="@string/generalize"
+                        android:textColor="#7f7f7f"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/spreadId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:gravity="center_vertical"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/spreanCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#7f7f7f"
+                            android:textSize="16sp"></TextView>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/mine_select"
+                        android:gravity="center_vertical"
+                        android:text="@string/recommend_explain"
+                        android:textColor="#7f7f7f"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/other"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/mine_select"
+                        android:gravity="center_vertical"
+                        android:text="@string/other"
+                        android:textColor="#7f7f7f"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+                    <RelativeLayout
+                        android:id="@+id/call_400"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/mine_select"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/call_400_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/call_400"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/call_400_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_alignBaseline="@+id/call_400_title"
+                            android:layout_toRightOf="@+id/call_400_title"
+                            android:gravity="center_vertical"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+                    <TextView
+                        android:id="@+id/common_problem"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/mine_select"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/common_problem"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+                    <TextView
+                        android:id="@+id/change_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/mine_select"
+                        android:gravity="center_vertical"
+                        android:text="@string/change_password"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+                    <RelativeLayout
+                        android:id="@+id/feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dip"
+                            android:text="@string/feedback"
+                            android:textSize="16sp"></TextView>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+                    <RelativeLayout
+                        android:id="@+id/check_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/mine_select"
+                            android:gravity="center_vertical"
+                            android:text="@string/check_update"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/now_versions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/mine_select"
+                            android:gravity="center_vertical"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+
+                    <TextView
+                        android:id="@+id/mine_exit"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/mine_select"
+                        android:gravity="center_vertical"
+                        android:text="@string/mine_exit"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#d1d5d8"
+                        android:contentDescription="@string/desc" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

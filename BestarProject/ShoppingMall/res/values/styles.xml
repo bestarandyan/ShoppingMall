@@ -1,0 +1,213 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@drawable/main_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:windowAnimationStyle">@style/Window.Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowTitleSize">0dip</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="StartTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/start_background</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="Window.Animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_fragment_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_fragment_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_fragment_close_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_fragment_close_out</item>
+    </style>
+
+    <style name="BaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="radiobuttonstyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">13dip</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/radiobutton_textcolor_state</item>
+    </style>
+
+    <style name="progress_style" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- ****************************** 发布详情  ******************************** -->
+    <!-- 审核中 -->
+    <style name="text_28_7f7f7f">
+        <item name="android:textSize">28sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#7f7f7f</item>
+    </style>
+
+    <!-- 区域 -->
+    <style name="text_18_dd000000">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#dd000000</item>
+    </style>
+
+    <!-- 标志性文字     : 栋号  室号   发布日期 -->
+    <style name="text_14_7f7f7f">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#7f7f7f</item>
+    </style>
+
+    <!-- 字段名称 : 业主姓名   电话 价格.. -->
+    <style name="text_16_8a000000">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8a000000</item>
+    </style>
+
+    <!-- 字段内容: 业主姓名 电话 价格... -->
+    <style name="text_16_3c3c3c">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#3c3c3c</item>
+    </style>
+
+    <style name="text_18_7f7f7f">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#f7f7f7</item>
+    </style>
+
+    <style name="text_18_3c3c3c">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#3c3c3c</item>
+    </style>
+
+    <style name="text_20_7f7f7f">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#7f7f7f</item>
+    </style>
+
+    <style name="text_12_f7f7f7">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#7f7f7f</item>
+    </style>
+
+    <style name="text_13_3c3c3c">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#3c3c3c</item>
+    </style>
+
+    <style name="text_14_333333">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#3c3c3c</item>
+    </style>
+
+    <style name="text_14_666666">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="text_16_909696">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#909696</item>
+    </style>
+
+    <style name="text_14_909696">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#909696</item>
+    </style>
+
+    <style name="text_14_8a000000">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#8a000000</item>
+    </style>
+
+    <style name="text_14_42000000">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#42000000</item>
+    </style>
+
+    <style name="text_16_3d4040">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#3d4040</item>
+    </style>
+
+    <style name="NetDisk" />
+
+    <style name="NetDisk.Unified" parent="@style/NetDisk" />
+
+    <style name="NetDisk.Unified.Smaller" parent="@style/NetDisk.Unified">
+        <item name="android:textSize">@dimen/text_size_smaller</item>
+    </style>
+
+    <style name="NetDisk.Unified.Smaller.Blue2TabBarGray" parent="@style/NetDisk.Unified.Smaller">
+        <item name="android:textColor">@drawable/blue_tabbargray_reverse_drawable</item>
+    </style>
+
+    <style name="text_14_9f9f9f">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#9f9f9f</item>
+    </style>
+
+    <style name="text_16_9f9f9f">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#7f7f7f</item>
+    </style>
+
+    <style name="text_18_343434">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#343434</item>
+    </style>
+
+    <style name="text_14_343434">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#343434</item>
+    </style>
+
+    <style name="text_14_2bc2ea">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#2bc2ea</item>
+    </style>
+
+    <style name="myDialogStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+</resources>

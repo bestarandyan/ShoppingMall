@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_living_area_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/actionbar"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/search_by_condition_back"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_checked"
+            android:drawableLeft="@drawable/ic_action_up_home"
+            android:gravity="center|center_horizontal"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/search_by_condition_back"
+            android:background="@drawable/textfiled_with_radius" >
+
+            <LinearLayout
+                android:id="@+id/search_living_area_clear"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center" >
+
+                <ProgressBar
+                    android:id="@+id/search_living_progressbar"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:clickable="false"
+                    android:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/clear_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:src="@drawable/ic_textfield_clear" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/search_living_area_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/search_living_area_clear"
+                android:background="@null"
+                android:hint="@string/search_hint"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#b8bfbf"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/localDataTv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingLeft="24dp"
+        android:text="@string/search_recent_title"
+        android:textColor="#8a000000"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/search_living_area_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/search_item_down_selector"
+        android:divider="#b8bfbf"
+        android:dividerHeight="0.5dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/search_living_area_nodata_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/search_living_area_nodata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/search__local_nohistory"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/goto_estate_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/start_selector"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="@string/estate_feedback_title"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

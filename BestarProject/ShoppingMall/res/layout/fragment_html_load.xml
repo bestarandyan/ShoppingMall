@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/actionbar"
+        android:padding="0dp"
+        android:tag="actionBar" >
+
+        <TextView
+            android:id="@+id/server_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_checked"
+            android:drawableLeft="@drawable/ic_action_up_home"
+            android:gravity="center|center_horizontal"
+            android:text="@string/service_agreement_titile"
+            android:textColor="#ffffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/server_agreement"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

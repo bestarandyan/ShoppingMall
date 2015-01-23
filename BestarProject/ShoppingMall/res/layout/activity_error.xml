@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#F5F5F5"
+    android:clickable="true"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wifi"
+        android:contentDescription="@string/desc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/error1"
+        android:textSize="10sp" />
+
+    <Button
+        android:layout_width="100dip"
+        android:layout_height="35dip"
+        android:layout_marginTop="10dip"
+        android:background="#FF9913"
+        android:text="@string/error2"
+        android:textColor="#ffffffff"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="10dip"
+        android:background="#C9C9C9"
+        android:contentDescription="@string/desc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/error3"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/background"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/tel_icon"
+            android:contentDescription="@string/desc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dip"
+            android:text="@string/error4"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

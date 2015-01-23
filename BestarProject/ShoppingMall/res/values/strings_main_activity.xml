@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="radio_1">出售</string>
+    <string name="radio_2">出租</string>
+    <string name="radio_3">发布</string>
+    <string name="radio_4">我的</string> 
+</resources>

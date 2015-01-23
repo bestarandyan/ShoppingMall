@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feedback_loadding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_background"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/actionbar"
+            android:padding="0dp"
+            android:tag="actionBar" >
+
+            <TextView
+                android:id="@+id/feedback_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/text_down_selector"
+                android:drawableLeft="@drawable/ic_action_up_home"
+                android:gravity="center|center_horizontal"
+                android:text="@string/feedback_title"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/feedback_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/binding_check_selector"
+                android:text="@string/feedback_send"
+                android:textColor="@color/white_action" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/content_feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/textview_selector"
+            android:hint="@string/feedback_please"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

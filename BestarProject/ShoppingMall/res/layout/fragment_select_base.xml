@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/area_select_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/district_select_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/actionbar"
+        android:padding="0dp"
+        android:tag="actionBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/district_select_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/loginback"
+            android:background="@drawable/text_down_selector"
+            android:drawableLeft="@drawable/ic_action_up_search"
+            android:gravity="center|center_horizontal"
+            android:text="@string/search_by_condition_district"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/select_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/district_select_title"
+        android:cacheColorHint="#00000000"
+        android:background="#3d4040"
+        android:divider="#000"
+        android:scrollbars="none"
+        android:dividerHeight="0.5dp" >
+    </ListView>
+    
+    <ListView
+        android:id="@+id/subdistrict_select_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/district_select_title"
+        android:cacheColorHint="#00000000"
+        android:background="@android:color/white"
+        android:divider="@null"
+        android:listSelector="@drawable/district_child_item_selector"
+        android:scrollbars="none"
+        android:visibility="gone">
+    </ListView>
+    
+    <ProgressBar 
+        android:id="@+id/subdistrict_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

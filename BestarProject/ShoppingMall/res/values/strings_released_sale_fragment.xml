@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="released_back">返回</string>
+    <string name="released_titile">发布出售</string>
+    <string name="released_submit">确定</string>
+    <string name="released_detail">房屋信息</string>
+    <string name="released_homesize">房型：</string>
+    <string name="released_area">面积：</string>
+    <string name="released_finish">完成</string>
+
+</resources>

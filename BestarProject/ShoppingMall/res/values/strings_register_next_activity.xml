@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="register_back">返回</string>
+	<string name="register">注册</string>
+    <string name="real_name">真实姓名</string>
+    <string name="real_name_s">填写真实姓名用于审核</string>
+    <string name="work_area">工作区域</string>
+    <string name="work_area_s">选择工作区域</string>
+    <string name="id_number">身份证号码</string>
+     <string name="id_number_info">填写有效身份证号</string>
+    <string name="invitation_code">邀请码(选填):</string>
+    <string name="photo_id">拍照上传身份证</string>
+    <string name="city_title">所在城市</string>
+    <string name="city_select">选择城市</string>
+    <string name="photo_no">未上传</string>
+    <string name="photo_crad">拍照上传名片</string>
+    <string name="remake_id">重拍身份证</string>
+    <string name="remake_crad">重拍名片</string>
+    <string name="read_agree">提交注册即表示我接受 </string>
+    <string name="service_agreement">软件许可及服务协议</string>
+	<string name="complete_registration">提交注册</string>
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/check_task_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#12c1c4"
+            tools:ignore="UselessParent" >
+
+            <TextView
+                android:id="@+id/check_task_info_back"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/text_down_selector"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_action_up_home"
+                android:gravity="center"
+                android:text="@string/released_infos"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:scrollbars="none"
+            tools:ignore="UselessParent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ScrollViewSize,UselessLeaf" >
+
+                <TextView
+                    android:id="@+id/check_task_check_state"
+                    style="@style/text_20_7f7f7f"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <TextView
+                    android:id="@+id/check_task_check_remark"
+                    style="@style/text_14_7f7f7f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"  
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="12dp"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="#e3e4e6" />
+
+                <TextView
+                    android:id="@+id/check_task_area"
+                    style="@style/text_18_dd000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/check_task_house_update_title"
+                    style="@style/text_18_dd000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="18dp"
+                    android:text="房型修改"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/check_task_house_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    style="@style/text_18_dd000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="18dp"
+                    android:text="房源照片"
+                    tools:ignore="HardcodedText" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent" >
+
+                    <ImageView
+                        android:id="@+id/check_task_house_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#e0000000"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/check_task_house_image_numbers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="#88cccccc"
+                        android:textSize="16dip"
+                        tools:ignore="SpUsage,HardcodedText" />
+                </FrameLayout>
+
+                <TextView
+                     style="@style/text_16_8a000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="18dp"
+                    android:text="配套信息"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/check_task_basis_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/check_task_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="18dp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

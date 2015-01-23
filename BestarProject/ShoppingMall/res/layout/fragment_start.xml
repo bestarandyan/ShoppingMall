@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_loadding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <Button
+            android:id="@+id/mSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/start_selector"
+            android:text="设置IP"
+            android:textColor="#fff"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="96dp"
+            android:background="@drawable/launcher_logo"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/start_login"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="bottom|center_horizontal|center_vertical"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/start_selector"
+            android:enabled="false"
+            android:text="@string/start_login"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/start_register"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:background="@drawable/start_selector"
+            android:enabled="false"
+            android:text="@string/start_register"
+            android:textColor="#fff" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center"
+          >
+
+            <TextView
+                android:id="@+id/app_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8affffff"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

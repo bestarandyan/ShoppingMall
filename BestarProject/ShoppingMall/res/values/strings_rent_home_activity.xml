@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rent_title">房源宝</string>
+     <string name="rent_bt">发布出租</string>
+      <string name="rent_home_hint">输入小区名/区域/板块…</string>
+       <string name="rent_home_text">最新发布:</string>
+       <string name="rent_home_searchbutton">搜索</string>
+</resources>

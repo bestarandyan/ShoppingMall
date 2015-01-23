@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#212121"
+    android:gravity="left|center_horizontal"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/shortcuts_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:textIsSelectable="false"
+        android:textSize="18sp" />
+
+</LinearLayout>

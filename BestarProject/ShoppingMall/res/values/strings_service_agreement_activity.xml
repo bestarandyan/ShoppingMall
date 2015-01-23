@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="service_agreement_titile">服务协议</string> 
+  <string name="service_agreement_back">返回</string>
+  <string name="help_title">小帮助</string>   
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="new_hef_back">返回</string>
+    <string name="new_hef_title">新增小区</string>
+    <string name="new_hef_submit">提交</string>
+    <string name="new_hef_base">基础信息</string>
+    <string name="new_hef_aerananme">小区名称</string>
+    <string name="new_area_part">区域板块</string>
+    <string name="new_area_adrass">小区地址</string>
+   
+
+</resources>

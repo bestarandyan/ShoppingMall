@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/contentLayout"
+            >
+
+        <TextView
+                android:id="@+id/hotCityTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff5104"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/search_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/search_item_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contentLayout"
+            android:layout_marginTop="8dp"
+            android:textColor="#8a000000"
+            android:textSize="13sp"/>
+
+</RelativeLayout>

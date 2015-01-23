@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    android:clickable="true"
+    android:id="@+id/mine_record_loadding"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mine_record_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/actionbar"
+        android:padding="0dp"
+        android:tag="actionBar" >
+
+        <TextView
+            android:id="@+id/mrecordback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/loginback"
+            android:background="@drawable/text_down_selector"
+            android:drawableLeft="@drawable/ic_action_up_home"
+            android:gravity="center|center_horizontal"
+            android:text="@string/mine_record_back"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/recordclear"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/text_down_selector"
+            android:text="@string/mine_record_clear"
+            android:textColor="@color/white_action"
+            android:visibility="gone" />
+          <Button
+            android:id="@+id/goto_review_content"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="@string/common_problem_review_rule"
+            android:textColor="@color/white_action"
+             />
+    </RelativeLayout>
+
+    <com.huoqiu.widget.pullrefresh.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/rg_tabs"
+        android:layout_below="@+id/mine_record_top"
+        android:cacheColorHint="#00000000"
+        android:divider="#d1d5d8"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" >
+    </com.huoqiu.widget.pullrefresh.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/record_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/none_data"
+            android:textColor="#7f7f7f"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@android:id/icon"
+        android:background="@color/tabbarorg"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/publishing_community"
+            style="@style/NetDisk.Unified.Smaller.Blue2TabBarGray"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_background_state"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="4.0dip"
+            android:text="@string/realse_records"
+            android:textColor="@drawable/button_font_style" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="#d1d5d8" />
+
+        <RadioButton
+            android:id="@+id/publishing_other"
+            style="@style/NetDisk.Unified.Smaller.Blue2TabBarGray"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_background_state"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="4.0dip"
+            android:text="@string/add_estate"
+            android:textColor="@drawable/button_font_style" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/cut_off_rule"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/rg_tabs"
+        android:visibility="gone"
+        android:background="#d1d5d8"
+        android:contentDescription="@string/released_sell_desc" />
+
+    <FrameLayout
+        android:id="@+id/sliding_layer_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_above="@id/cut_off_rule" />
+
+</RelativeLayout>

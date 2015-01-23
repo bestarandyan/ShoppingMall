@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@android:id/icon"
+        android:background="@color/tabbarorg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/publishing_community"
+            style="@style/NetDisk.Unified.Smaller.Blue2TabBarGray"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_background_state"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="4.0dip"
+            android:text="@string/radio_1"
+            android:textColor="@drawable/button_font_style" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="#d1d5d8" />
+
+        <RadioButton
+            android:id="@+id/publishing_other"
+            style="@style/NetDisk.Unified.Smaller.Blue2TabBarGray"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/radiobutton_background_state"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="4.0dip"
+            android:text="@string/radio_2"
+            android:textColor="@drawable/button_font_style" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/cut_off_rule"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/rg_tabs"
+        android:background="#d1d5d8"
+        android:contentDescription="@string/released_sell_desc" />
+
+    <FrameLayout
+        android:id="@+id/sliding_layer_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cut_off_rule" />
+
+</RelativeLayout>

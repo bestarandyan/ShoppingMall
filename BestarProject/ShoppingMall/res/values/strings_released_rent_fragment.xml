@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="released_rent_back">返回</string>
+    <string name="released_rent_title">发布出租</string>
+    <string name="released_rent_next">下一步</string>
+    <string name="released_rent_area_name">小区名称</string>
+    <string name="released_rent_seat_number">楼栋号</string>
+    <string name="released_rent_room_no">室号</string>
+    <string name="released_rent_unit_no">单元号</string>
+    <string name="released_rent_room_number">(门牌号)</string>
+    <string name="released_rent_describe">若无小区名称，使用地址替代，例如“武定西路1200弄”</string>
+    <string name="released_rent_desc_line2">栋座号使用数字，独栋则勾选"独栋"</string>
+    <string name="released_rent_desc_line3">室号使用数字，如“1A”需填写“101”室</string>
+	<string name="released_rent_desc_line4">若该小区只有一栋楼,请选择"小区单栋"</string>
+	<string name="released_rent_desc_line5">若该楼不分单元,请选择"无单元"</string>
+    
+    <string name="released_rent_next_back">返回</string>
+    <string name="released_rent">发布出租</string>
+    <string name="released_rent_sumbit">提交</string>
+    <string name="released_rent_desc">该房源还未发布，赶紧完善信息，通过审核获返利</string>
+    <string name="released_rent_owner_info">业主信息</string>
+    <string name="released_rent_owner_name">业主姓名</string>
+    <string name="released_rent_owner_phone">联系电话</string>
+    <string name="released_rent_owner_add">增加业主和联系电话</string>
+    <string name="released_rent_price_info">价格信息</string>
+    <string name="released_rent_come_hand">租金</string>
+    <string name="released_rent_price_yuan">元/月</string>
+    <string name="released_rent_housing_info">房屋信息</string>
+    <string name="released_rent_housing_type">房型</string>
+    <string name="released_rent_housing_area">面积</string>
+    <string name="released_rent_housing_meters">平米</string>
+    
+    
+</resources>

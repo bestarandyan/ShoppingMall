@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/checkedLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.manyi.mall.widget.refreshview.NLPullRefreshView
+        android:id="@+id/refreshable_view"
+        android:orientation="vertical" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <com.huoqiu.widget.pinnedlistview.PinnedHeaderListView
+            android:id="@+id/checkedListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" >
+        </com.huoqiu.widget.pinnedlistview.PinnedHeaderListView>
+    </com.manyi.mall.widget.refreshview.NLPullRefreshView>
+
+</LinearLayout>

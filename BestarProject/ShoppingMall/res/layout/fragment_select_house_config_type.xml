@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E6E8"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/info_background" >
+
+        <TextView
+            android:id="@+id/select_save_btn"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/released_nextbtn_selector"
+            android:gravity="center"
+            android:text="@string/amend_houseinfo_savebtn"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/select_back"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/text_down_selector"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_action_up_home"
+            android:gravity="center"
+            android:text="@string/select_house_config_type_backbtn"
+            android:textColor="@color/tetx_title_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/type_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_house_config_type"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/select_house_config_type_maopi"
+            android:textColor="#3c3c3c" />
+
+        <RadioButton
+            android:id="@+id/radioBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d1d3d8" />
+
+    <RelativeLayout
+        android:id="@+id/type_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_house_config_type"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/select_house_config_type_daizhuangxiu"
+            android:textColor="#3c3c3c" />
+		
+        <RadioButton
+            android:id="@+id/radioBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+        
+        <TextView android:id="@+id/configTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv2"
+            android:layout_toLeftOf="@id/radioBtn2"
+            android:singleLine="true"
+            android:layout_marginLeft="70dp"
+            android:gravity="right|center_vertical"
+            android:textColor="#a1a1a1" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d1d3d8" />
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="asmack_fyb">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ShoppingMall/libs/asmack_fyb.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

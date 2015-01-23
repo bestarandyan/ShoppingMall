@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="rent_infos_backs">    房源详情</string>
+    <string name="rent_infos">出租详情</string>
+    <string name="rent_infos_inform">举报</string>
+    <string name="rent_infos_back">返回</string>
+    <string name="rent_infos_chang_disk">改盘</string>
+    <string name="rent_infos_basis_info">基础信息</string>
+    <string name="rent_infos_area_plate">区域板块 </string>
+    <string name="rent_infos_area">小区 </string>
+    <string name="rent_infos_seat">栋座 </string>
+    <string name="rent_infos_room_no">室号 </string>
+    <string name="rent_infos_price_info">价格信息</string>
+    <string name="rent_infos_price">租金 </string>
+    <string name="rent_info_housing_info">房屋信息</string>
+    <string name="rent_info_housing_type">房型 </string>
+    <string name="rent_info_housing_area">面积 </string>
+    <string name="rent_info_release_time">发布时间</string>
+</resources>

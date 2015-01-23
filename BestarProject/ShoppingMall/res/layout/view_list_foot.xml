@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:paddingTop="40dp"
+    >
+    <TextView
+        android:id="@+id/dialog_select_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:background="@drawable/ic_guide_arrow"
+        android:gravity="center_vertical"
+        android:textColor="#3d4040"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/dialog_select_foot_msg"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:textColor="#3d4040"/>
+</LinearLayout>

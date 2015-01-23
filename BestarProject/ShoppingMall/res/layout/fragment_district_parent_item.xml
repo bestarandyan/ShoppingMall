@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/district_parent_item_selector"
+    android:layout_height="48dp" >
+    
+    <TextView 
+        android:id="@+id/district_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="16sp"
+        android:textColor="@color/district_parent_item_text_color"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

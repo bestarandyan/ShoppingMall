@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/release_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6f2f2"
+        android:clickable="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/actionbar"
+            android:padding="0dp"
+            android:tag="actionBar">
+
+            <ImageView
+                android:id="@+id/realsehomeicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/actionbar_logo"
+                android:contentDescription="@string/desc" />
+
+            <Button
+                android:id="@+id/rewards_pulishs"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_checked"
+                android:gravity="center"
+                android:text="@string/publish_description"
+                android:textColor="@color/white_action" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:scrollbars="none"
+            tools:ignore="UselessLeaf,UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/releaseLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fadingEdge="none">
+
+                    <RelativeLayout
+                        android:id="@+id/advertLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:fadingEdge="none"
+                        android:visibility="gone">
+
+                        <com.huoqiu.widget.FangyouReleasedViewPage
+                            android:id="@+id/view_page"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:fadeScrollbars="false"
+                            android:fadingEdge="none" />
+
+                        <com.huoqiu.widget.viewpageindicator.CirclePageIndicator
+                            android:id="@+id/release_radio_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="16dp"
+                            android:background="@null"
+                            android:gravity="center_horizontal"
+                            app:circle_radius="3dp"
+                            app:circle_spacing="1.5dp"
+                            app:fillColor="#FFFFFF"
+                            app:pageColor="#33FFFFFF"
+                            app:strokeWidth="0dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/advertLayout"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <com.huoqiu.widget.FangYouInfoBar
+                            android:id="@+id/realse_home_sell"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:background="@drawable/task_item_head_selector"
+                            android:gravity="center_vertical"
+                            app:descriptionColor="#8a000000"
+                            app:descriptionSize="14sp"
+                            app:iconRes="@drawable/ic_publish_sell"
+                            app:titleColor="#dd000000"
+                            app:titleSize="16sp"
+                            app:titleText="@string/released_sell"></com.huoqiu.widget.FangYouInfoBar>
+
+                        <LinearLayout
+                            android:id="@+id/sell_released_record"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/task_item_bottom_selector"
+                            android:clickable="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/text_16_8a000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="16dp"
+                                android:text="@string/look_releasd_record" />
+
+                            <TextView
+                                android:id="@+id/check_sell_record_number"
+                                android:layout_width="20dp"
+                                android:layout_height="16dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:background="@drawable/container_num"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:textSize="12sp"
+                                android:visibility="gone"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/sell_month_reward"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/task_item_bottom_selector"
+                            android:clickable="true"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/text_16_8a000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="16dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/month_reward" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/indicator_hot" />
+                        </RelativeLayout>
+
+                        <com.huoqiu.widget.FangYouInfoBar
+                            android:id="@+id/realse_home_rent"
+                            android:layout_width="fill_parent"
+                            android:layout_height="64dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/task_item_body_selector"
+                            app:descriptionColor="#8a000000"
+                            app:descriptionSize="14sp"
+                            app:iconRes="@drawable/ic_publish_rent"
+                            app:titleColor="#dd000000"
+                            app:titleSize="16sp"
+                            app:titleText="@string/released_rent"></com.huoqiu.widget.FangYouInfoBar>
+
+                        <com.huoqiu.widget.FangYouInfoBar
+                            android:id="@+id/change_house"
+                            android:layout_width="fill_parent"
+                            android:layout_height="64dp"
+                            android:background="@drawable/task_item_body_selector"
+                            android:visibility="gone"
+                            app:descriptionColor="#8a000000"
+                            app:descriptionSize="14sp"
+                            app:iconRes="@drawable/ic_publish_revert"
+                            app:titleColor="#dd000000"
+                            app:titleSize="16sp"
+                            app:titleText="@string/releasd_change"></com.huoqiu.widget.FangYouInfoBar>
+
+                        <RelativeLayout
+                            android:id="@+id/rent_month_reward"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/task_item_bottom_selector"
+                            android:clickable="true"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/text_16_8a000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="16dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/month_reward" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/indicator_hot" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rent_released_record"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/task_item_bottom_selector"
+                            android:clickable="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/text_16_8a000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="16dp"
+                                android:text="@string/look_releasd_record" />
+
+                            <TextView
+                                android:id="@+id/check_rent_record_number"
+                                android:layout_width="20dp"
+                                android:layout_height="16dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:background="@drawable/container_num"
+                                android:gravity="center"
+                                android:textColor="#fff"
+                                android:textSize="12sp"
+                                android:visibility="gone"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/get_action_task"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:visibility="gone">
+
+                            <com.huoqiu.widget.FangYouInfoBar
+                                android:id="@+id/layout_gettask"
+                                android:layout_width="fill_parent"
+                                android:layout_height="72dp"
+                                android:background="@drawable/task_item_head_selector"
+                                app:descriptionColor="#8a000000"
+                                app:descriptionSize="14sp"
+                                app:iconRes="@drawable/ic_publish_camera"
+                                app:titleColor="#dd000000"
+                                app:titleSize="16sp"
+                                app:titleText="@string/get_take_picture_task"></com.huoqiu.widget.FangYouInfoBar>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginRight="12dp"
+                                android:background="@drawable/indicator_new"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:textColor="#fff"
+                                tools:ignore="HardcodedText" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/action_task_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/task_item_body_selector"
+                            android:clickable="true"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/text_16_8a000000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="16dp"
+                                android:text="@string/pending_task" />
+
+                            <TextView
+                                android:id="@+id/user_task_count"
+                                android:layout_width="20dp"
+                                android:layout_height="16dp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:background="@drawable/container_num"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="10"
+                                android:textColor="#fff"
+                                android:textSize="12sp"
+                                android:visibility="gone"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/look_task_record"
+                            style="@style/text_16_8a000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/task_item_bottom_selector"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="16dp"
+                            android:text="@string/look_task_record"
+                            android:visibility="gone" />
+
+                        <com.huoqiu.widget.FangYouInfoBar
+                            android:id="@+id/released_recommend"
+                            android:layout_width="fill_parent"
+                            android:layout_height="72dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/task_item_below_selector"
+                            app:descriptionColor="#8a000000"
+                            app:descriptionSize="14sp"
+                            app:iconRes="@drawable/ic_publish_agent"
+                            app:titleColor="#dd000000"
+                            app:titleSize="16sp"
+                            app:titleText="@string/invite_friend"></com.huoqiu.widget.FangYouInfoBar>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

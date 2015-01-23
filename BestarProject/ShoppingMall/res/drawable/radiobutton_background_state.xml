@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:constantSize="true" android:dither="true" android:variablePadding="true">
+
+    <item android:drawable="@color/tabbarpre" android:state_pressed="true"></item>
+    <item android:drawable="@color/tabbarorg"/>
+
+</selector>

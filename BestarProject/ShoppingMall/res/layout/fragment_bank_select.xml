@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/actionbar"
+        android:clickable="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/bank_select_back"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_action_up_home"
+            android:gravity="center"
+            android:textColor="@color/tetx_title_color"
+            android:textSize="18sp" />
+		<Button android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:id="@+id/voiceBtn"
+		    android:text="voice"
+		    android:visibility="gone"
+		    />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/bank_select_back"
+            android:layout_toLeftOf="@id/voiceBtn"
+            android:background="@drawable/textfiled_with_radius"
+            android:paddingLeft="3dp" 
+            android:paddingRight="2dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/search_clear"
+                android:layout_width="48dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#fff"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:src="@drawable/ic_textfield_clear" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/search_bank_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/search_clear"
+                android:background="#fff"
+                android:hint="@string/select_bank_hint"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#b8bfbf"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/bank_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/search_item_down_selector"
+        android:cacheColorHint="@null"
+        android:divider="#b8bfbf"
+        android:dividerHeight="0.5dp" />
+
+</LinearLayout>

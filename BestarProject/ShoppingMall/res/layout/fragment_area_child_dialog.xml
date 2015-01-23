@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/areaChildDialogLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000" >
+
+    <LinearLayout
+        android:id="@+id/fragmentTag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/actionbar" >
+
+            <TextView
+                android:id="@+id/dialogSelectBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_checked"
+                android:drawableLeft="@drawable/ic_action_up_home"
+                android:gravity="center|center_horizontal"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/listViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ListView
+                android:id="@+id/dialogSelectListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:cacheColorHint="#00000000"
+                android:divider="#d1d5d8"
+                android:dividerHeight="0.5dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

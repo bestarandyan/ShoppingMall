@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_living_area_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/actionbar"
+        android:id="@+id/topLayout"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/search_by_condition_back"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_checked"
+            android:drawableLeft="@drawable/ic_action_up_home"
+            android:gravity="center|center_horizontal"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/search_by_condition_back"
+            android:background="@drawable/textfiled_with_radius" >
+
+            <LinearLayout
+                android:id="@+id/search_living_area_clear"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center" >
+
+                <ProgressBar
+                    android:id="@+id/search_living_progressbar"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:clickable="false"
+                    android:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/clear_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:src="@drawable/ic_textfield_clear" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/search_living_area_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/search_living_area_clear"
+                android:background="@null"
+                android:hint="@string/search_build_hint"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#b8bfbf"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/search_living_area_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/search_item_down_selector"
+        android:divider="#b8bfbf"
+        android:dividerHeight="0.5dp"
+        android:layout_below="@id/topLayout"
+        android:visibility="gone" />
+
+    <TextView android:layout_below="@id/topLayout"
+        android:id="@+id/search_living_area_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:gravity="center"
+        android:text="暂无楼栋" />
+
+</RelativeLayout>

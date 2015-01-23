@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_fyb">房源宝</string>
+    <string name="start_describe">中国最大的房地产中介房源信息交流平台</string>
+    <string name="start_register">注册</string>    
+    <string name="start_login">登录</string>                
+</resources>

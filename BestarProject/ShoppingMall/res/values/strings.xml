@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">房源宝</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="error1">网络不给力请稍后再试吧</string>
+    <string name="error2"> 重试</string>
+    <string name="error3"> 或者拨打房源宝客服电话 </string>
+    <string name="error4"> 客服电话</string>
+    <string name="desc">backgrondImage</string>
+    <string name="mine_realse_button">修改</string>
+    <string name="sell_nodata">暂无记录</string>
+
+    <!-- Main activity -->
+    <string name="main_tab_search_house">找房</string>
+    <string name="main_tab_post">发布</string>
+    <string name="main_tab_mine">我的</string>
+    <string name="main_title_sell">出售</string>
+    <string name="main_title_rent">出租</string>
+    <string name="main_recent_search">最近搜索</string>
+
+    <!-- Tab Search house -->
+    <string name="search_house_search_key">输入小区名称搜索</string>
+
+    <!-- Search by condition_district -->
+    <string name="search_by_condition_district">按区域板块筛选</string>
+    <string name="released_get_task_reward">暂仅支持出租房源,通过奖励</string>
+    <string name="released_get_task_bj_reward">看房用房源宝拍照,通过奖励</string>
+    <string name="released_invite_reward">邀请一位审核通过奖励</string>
+    <string name="released_reward_yuan">元</string>
+    <string name="info_change_house">改盘</string>
+    <string name="advert_detail_title">活动详情</string>
+
+    <!-- 发布出售   released_sell_fragment.xml -->
+    <string name="released_sell_single_building">小区单栋</string>
+    <string name="released_unit_single_building">无单元</string>
+    <string name="released_sell_reward">发布一套房子审核通过奖励</string>
+    <string name="dialog_select_foot_msg">请选择小区子划分</string>
+    <string name="release_error">请确认业主信息是否完善!</string>
+
+    <!-- 发布出租   released_rent_fragment.xml -->
+    <string name="released_rent_single_building">小区单栋</string>
+    <string name="released_rent_single_unit">无单元</string>
+    <string name="release_villa">别墅</string>
+    <string name="release_villa_content">“独栋别墅”、“独门独户”请勾选“别墅”</string>
+    <string name="released_rent_reward">发布一套房子审核通过奖励</string>
+
+    <!-- 发布改盘  change_house_first.xml -->
+    <string name="change_house_single_building">独栋</string>
+    <string name="change_house_not_unit">无单元</string>
+    <string name="released_change_reward">提供已售、已租信息,通过奖励</string>
+    <string name="released_change_seat_number">楼栋号</string>
+    <string name="clickfiltrate">按区域板块筛选</string>
+    <string name="history">最近搜索</string>
+    <string name="norearoe">暂时没有您想要的小区</string>
+    <string name="newarea">新增小区</string>
+    <string name="please">请输入小区名称搜索</string>
+
+    <!-- Search living area -->
+    <string name="search_hint">请输入小区名...</string>
+    <string name="search_build_hint">请输入楼栋号...</string>
+    <string name="search_recent_title">最近使用过的小区</string>
+    <string name="search__local_nohistory">暂无历史记录</string>
+    <string name="search_remote_nohistory">暂时没有您想要的小区</string>
+    <string name="search_build_remote_nohistory">暂时没有您想要的楼栋号</string>
+    <string name="exception_again">重试</string>
+    <string name="nodata_search">没有符合条件的房源</string>
+
+    <!-- 发布记录 - 发布详情 released_rcord_fragment.xml -->
+    <string name="released_infos">发布详情</string>
+    <string name="house_image_take_photo">实地拍照</string>
+    <string name="house_image_change_house">修改房型</string>
+    <string name="released_record_audit">审核中</string>
+    <string name="released_record_building">号 • </string>
+    <string name="released_record_single_building">独栋 •</string>
+    <string name="released_record_room"> 室 </string>
+    <string name="released_record_change">修改</string>
+    <string name="released_record_owner_name">业主</string>
+    <string name="released_record_phone_number">联系电话</string>
+    <string name="released_record_price">到手价</string>
+    <string name="released_record_rent_price">租金</string>
+    <string name="released_record_price_wan">万</string>
+    <string name="released_record_price_yuan">元/月</string>
+    <string name="released_record_square_meters">平米</string>
+    <string name="released_record_house_type">房型</string>
+    <string name="released_record_house_type_bedroom">室</string>
+    <string name="released_record_house_type_livingRoom">厅</string>
+    <string name="released_record_house_type_wc">卫</string>
+    <string name="released_record_proportion">面积</string>
+    <string name="released_record_proportion_meters">平米</string>
+    <string name="released_record_area">区域</string>
+    <string name="released_record_plate">板块</string>
+    <string name="released_record_area_address">小区地址</string>
+    <string name="released_record_rent_change_type">出租改盘:</string>
+    <string name="released_record_sell_change_type">出售改盘:</string>
+    <string name="released_record_change_house_reason">改盘理由:</string>
+    <string name="released_record_change_report_reason">举报理由:</string>
+    <string name="dialog_msg_area">请输入小区名称！</string>
+    <string name="dialog_msg_seat">请输入楼栋号！</string>
+    <string name="dialog_msg_util">请输入单元号！</string>
+    <string name="dialog_msg_room_menpai">请输入门牌号！</string>
+    <string name="dialog_msg_room_shi">请输入室号！</string>
+    <!-- 发布记录 - 发布详情  - 修改 -->
+    <string name="released_record_infos_change">发布</string>
+    <string name="released_record_infos_change_owner_info">业主信息</string>
+    <string name="released_record_infos_owner_name">业主姓名</string>
+    <string name="released_record_infos_owner_phone">联系电话</string>
+    <string name="released_record_infos_change_owner_add">+添加业主信息</string>
+    <string name="released_record_infos_change_pirce">到手价</string>
+    <string name="released_record_infos_change_wan">万</string>
+    <string name="released_record_infos_change_housing_info">房源信息</string>
+    <string name="released_record_infos_change_proportion">面积</string>
+    <string name="released_record_infos_change_square_meters">平米</string>
+    <!-- amend_houseInfo start -->
+    <string name="amend_houseinfo_backbtn">修改房源信息</string>
+    <string name="amend_houseinfo_savebtn">保存</string>
+    <string name="amend_houseinfo_space">平米</string>
+    <string name="amend_houseinfo_price">万</string>
+    <string name="amend_houseinfo_rent">元  / 月</string>
+    <string name="amend_houseinfo_space_hint">房源面积</string>
+    <string name="amend_houseinfo_price_hint">房源售价</string>
+    <string name="amend_houseinfo_rent_hint">房源出租价</string>
+    <!-- amend_houseInfo end -->
+    <!-- selecthouseconfig start -->
+    <string name="select_house_config_backbtn">房源配套信息</string>
+    <string name="select_house_config_type_backbtn">填写配套</string>
+    <string name="select_house_config_type_maopi">毛坯</string>
+    <string name="select_house_config_type_daizhuangxiu">带装修</string>
+    <string name="select_house_config_completed">填写配套完成</string>
+    <!-- selecthouseconfig end -->
+
+
+    <!-- gettask start -->
+    <string name="gettask_title">领取拍照任务</string>
+    <string name="gettask_backbtn">返回</string>
+    <string name="gettask_notice">请输入您要为房源宝拍照的房源。\n若该房源无照片则可领取该拍照任务，完成后奖10元.</string>
+    <string name="gettask_neighborhood_name">小区名：</string>
+    <string name="gettask_build">楼栋号：</string>
+    <string name="gettask_bed">室号：</string>
+    <string name="gettask_gettaskbtn">领取任务</string>
+    <string name="gettask_canget_dialog_msg">领取拍照任务后需要在48小时实地拍照并上传，是否领取任务？</string>
+    <string name="gettask_cantget_dialog_msg">该房源还未发布出售/出租，请先发布该房源租售信息。</string>
+    <string name="gettask_release_success">房源发布成功，是否同时领取该房源拍照任务？</string>
+    <string name="gettask_release_after_msg">房源已发布成功，是否领取拍照任务？</string>
+    <string name="gettask_release_after_yes">领取</string>
+    <string name="gettask_release_after_no">取消</string>
+    <string name="gettask_btn_lqrw">领取任务</string>
+    <string name="gettask_btn_yhzs">以后再说</string>
+    <string name="gettask_btn_fbcs">发布出售</string>
+    <string name="gettask_btn_fbcc">发布出租</string>
+    <string name="gettask_util_msg">必填，若无请输入"0"</string>
+    <string name="gettask_util_building">若该小区只有一栋楼,请选择"小区单栋"</string>
+    <string name="gettask_util_unit">若该楼不分单元,请选择"无单元"</string>
+    <string name="gettask_menpai_msg">数字或字母，最多4个字符</string>
+    <string name="gettask_cant_find">您已有10项拍照任务，请先完成再领取新任务</string>
+    <!-- gettask end -->
+
+
+    <!-- *************************我的Start ************************* -->
+    <string name="share_app_content">推荐中介必备手机软件房源宝。下载地址%1$s ，注册送10元现金！</string>
+    <string name="share">分享</string>
+
+    <!-- ************************* 我的End ************************* -->
+
+
+    <!-- *************************出售列表 start************************* -->
+    <string name="sell_list_item_dudong">独栋</string>
+    <string name="sell_list_item_wan">万</string>
+    <string name="sell_list_item_hao">单元</string>
+    <string name="sell_list_item_shi">室</string>
+    <string name="sell_list_item_ting">厅</string>
+    <string name="sell_list_item_wei">卫</string>
+    <string name="sell_list_item_pinmi">平米</string>
+    <string name="sell_list_item_shtg">审核通过</string>
+    <string name="sell_list_item_shsb">审核失败</string>
+    <string name="sell_list_item_shz">审核中</string>
+    <string name="sell_list_dialog_shz">该房源还在审核中</string>
+    <string name="sell_list_dialog_cantlook">审核未通过不能查看</string>
+    <!-- ************************* 出售列表 End ************************* -->
+
+    <string name="released_sell_next_back">返回</string>
+    <string name="released_sell">发布出售</string>
+    <string name="released_sell_sumbit">提交</string>
+    <string name="released_sell_desc">该房源还未发布，赶紧完善信息，通过审核获返利</string>
+    <string name="released_sell_owner_info">业主信息</string>
+    <string name="released_sell_owner_name">业主姓名</string>
+    <string name="released_sell_owner_phone">联系电话</string>
+    <string name="released_sell_owner_add">增加业主和联系电话</string>
+    <string name="released_sell_price_info">价格信息</string>
+    <string name="released_sell_come_hand">到手价</string>
+    <string name="released_sell_price_wan">万</string>
+    <string name="released_sell_housing_info">房屋信息</string>
+    <string name="released_sell_housing_type">房型 </string>
+    <string name="released_sell_housing_area">面积</string>
+    <string name="released_sell_housing_meters">平米</string>
+    <string name="released_sell_back">返回</string>
+    <string name="released_sell_title">发布出售</string>
+    <string name="released_sell_next">下一步</string>
+    <string name="released_sell_area_name">小区名称</string>
+    <string name="released_sell_seat_number">楼栋号</string>
+    <string name="released_sell_room_no">室号</string>
+    <string name="released_sell_room_number">(门牌号)</string>
+    <string name="released_sell_unit_no">单元号</string>
+    <string name="released_sell_describe">若无小区名称，使用地址替代，例如“武定西路1200弄”</string>
+    <string name="released_sell_desc_line2">栋座号使用数字，独栋则勾选“独栋”</string>
+    <string name="released_sell_desc_line3">室号使用数字，如“1A”需填写“101”室</string>
+    <string name="released_sell_desc_line4">若该小区只有一栋楼,请选择"小区单栋"</string>
+    <string name="released_sell_desc_line5">若该楼不分单元,请选择"无单元"</string>
+    <string name="picture_result">图</string>
+
+    <!-- *************************发布出售 start************************* -->
+    <string name="release_sell_dialog_error">请输入小区名称</string>
+    <!-- *************************发布出售end************************* -->
+
+
+    <!-- 审核中 审核失败 -->
+    <string name="reviewing">您的账号正在审核中</string>
+    <string name="reviewing_det">我们会在24小时内审核后通知到您</string>
+    <string name="review_failed">抱歉，您未能通过身份审核</string>
+    <string name="review_again">重新完善注册信息</string>
+    <string name="failed_remark">失败原因：</string>
+    <string name="again_register_content1">房源宝是专为经纪人服务的，为此我们希望您提供真实信息，以进行审核。</string>
+    <string name="again_register_content2">您是通过同行推荐知道这个APP的吗？请输入TA的房源宝邀请码</string>
+    <string name="again_register_commit">从新提交注册信息</string>
+    <!-- 注册 -->
+    <string name="complete_resgiter">完成注册</string>
+    <string name="upload_id_card">拍照上传身份证</string>
+    <string name="upload_bs_card">拍照上传名片</string>
+    <string name="re_upload_id_card">重拍身份证</string>
+    <string name="re_upload_bs_card">重拍名片</string>
+    <string name="complete_info">完善您的信息</string>
+    <string name="commit_info_again">重新提交注册信息</string>
+    <string name="please_choose_city">请选择城市</string>
+    <string name="exit_login">退出登录</string>
+    <string name="fang_yuan_bao">房源宝</string>
+    <string name="phone_number">手机号</string>
+    <string name="ver_code">验证码</string>
+    <string name="goto_next">继续</string>
+    <string name="confirm">确定</string>
+
+    <!-- 出租详情 -->
+    <string name="rent_info_price_yuan">元/月</string>
+    <string name="rent_info_room">室</string>
+    <string name="rent_info_ting">厅</string>
+    <string name="rent_info_wei">卫</string>
+    <string name="rent_info_square_meters">平米</string>
+
+    <!-- 出租首页 RentInfoListFrgament -->
+    <string name="rent_info_list_single_building">独栋</string>
+    <string name="rent_info_list_building">号  </string>
+    <string name="rent_info_list_yuan_ting">元/月  </string>
+    <string name="rent_info_list_room">室</string>
+    <string name="rent_info_list_ting">厅</string>
+    <string name="rent_info_list_wc">卫</string>
+    <string name="rent_info_list_square_meters">平米</string>
+    <string name="rent_info_list_review_pass">审核通过</string>
+    <string name="rent_info_list_review_in">审核中</string>
+    <string name="rent_info_list_review_failure">审核失败</string>
+    <string name="fangyb_titile">房源宝</string>
+    <string name="fangyb_bt">发布出售</string>
+    <string name="fangyb_tvhint">请输入小区名/区域/板块...</string>
+    <string name="fangyb_new">最新发布：</string>
+
+    <!-- stask_info  start -->
+    <string name="stask_info">任务详情</string>
+    <string name="call_phone_title">打电话</string>
+    <string name="call_phone">拨打电话:</string>
+    <string name="task_info_building">号</string>
+    <string name="task_info_room">室</string>
+    <string name="task_info_house">房</string>
+    <string name="task_info_day">今天</string>
+    <string name="task_info_update">修改</string>
+    <string name="task_info_house_type">房型 : </string>
+    <string name="task_info_hall">厅</string>
+    <string name="task_info_wc">卫</string>
+    <string name="task_info_space_area">面积 : </string>
+    <string name="task_info_square_meters">平米</string>
+    <string name="task_info_hand_price">到手价 : </string>
+    <string name="task_info_wan">万</string>
+    <string name="task_info_rent_price">租金 : </string>
+    <string name="task_info_yuan">元/月</string>
+    <string name="task_info_taking_pictures">拍摄房源照片</string>
+    <string name="task_info_fill_write">填写配套信息</string>
+    <string name="task_info_photos_not">照片没拍完</string>
+    <string name="task_info_fill_write_not">配套信息没填完</string>
+    <string name="task_info_the_saved">已保存,请去提交</string>
+    <string name="task_info_save">保存</string>
+    <string name="task_info_not_as">没看成</string>
+    <string name="task_info_confirm">确定</string>
+    <string name="task_info_input_text">请输入没看成原因</string>
+    <string name="task_info_cancel">取消</string>
+    <string name="task_info_is_submit">正在提交中</string>
+    <string name="task_info_uploading">上传照片</string>
+    <string name="task_info_network_error">网络异常，请稍候再试</string>
+    <string name="task_info_memory_error">内存不足，请清理内存后重试！</string>
+    <string name="task_info_completed">已完成</string>
+    <string name="task_info_not_completed">未完成</string>
+    <string name="task_info_Less_1_hours">少于1小时</string>
+    <string name="task_info_shtg">审核通过</string>
+    <string name="task_info_shsb">审核失败</string>
+    <string name="task_info_shz">审核中</string>
+    <string name="task_info_reward">奖励%s元</string>
+    <string name="task_info_failure_reason">失败原因:</string>
+
+    <!-- to_day_stask_info  end -->
+    <string name="search_back_btn">小区搜索</string>
+    <!-- checktaskcompleted start -->
+    <string name="check_task_completed_backbtn">任务详情</string>
+    <string name="check_task_failure">任务失败</string>
+    <string name="check_task_why">原因: </string>
+    <string name="check_task_completed">已完成</string>
+    <string name="check_task_basic_info">基础信息</string>
+    <string name="check_stask_info_taking_pictures">拍摄房源照片:\n</string>
+    <string name="check_stask_info_fill_write">配套信息:\n</string>
+    <!-- checktaskcompleted end -->
+
+
+    <!-- release fragement  start -->
+    <string name="receive_task_reward">完成一套审核通过奖励8元</string>
+    <string name="invitation_reward">邀请一位审核通过奖励10元</string>
+    <!-- release fragement  end -->
+
+
+    <!-- House images -->
+    <string name="house_image_prompt">所有室内照片请横屏拍摄！</string>
+    <string name="house_image_take_photo_complete">已拍完</string>
+    <string name="livingroom_number">%d厅</string>
+    <string name="bedroom_number">%d室</string>
+    <string name="wcroom_number">%d卫</string>
+    <string name="livingroom_sequence">客厅%d</string>
+    <string name="main_bedroom">主卧</string>
+    <string name="livingroom_main">客厅</string>
+    <string name="dining_room">餐厅</string>
+    <string name="bedroom_sequence_only_one">次卧</string>
+    <string name="bedroom_sequence">次卧%d</string>
+    <string name="wcroom_sequence_main">卫生间</string>
+    <string name="wcroom_sequence">卫生间%d</string>
+    <string name="image_numbers">%1$d/%2$d</string>
+    <string name="house_mailbox">邮箱</string>
+    <string name="house_elevator_description">电梯间(操作板)</string>
+    <string name="house_elevator">电梯间</string>
+    <string name="house_elevator_or_mail_box">电梯间/邮箱</string>
+    <string name="door_plate">门牌</string>
+    <string name="houseimages_title">实地拍照</string>
+    <string name="house_others_header">厨房.阳台.外景</string>
+    <string name="house_kitchen">厨房</string>
+    <string name="house_others">其他</string>
+    <string name="house_balcony">阳台</string>
+    <string name="house_balcony_content1">由阳台或卧室窗户看出去</string>
+    <string name="house_exterior">阳台/卧室外景</string>
+    <string name="house_info_empty">无房型信息！</string>
+    <string name="house_location_title">定位失败</string>
+    <string name="house_location_message">拍照需要使用您的位置信息,请检查您的网络和位置设置</string>
+    <string name="house_location_button">设置</string>
+    <string name="house_location_processing">正在定位,请稍后</string>
+    <string name="house_image_require">要求：</string>
+    <string name="house_image_elevator_or_mail_box">电梯按钮/邮箱照</string>
+    <string name="house_image_elevator_content_1">1. 完整的电梯按钮照片</string>
+    <string name="house_image_elevator_content_2">2. 若无电梯请拍邮箱</string>
+    <string name="house_image_elevator_content_3">3. 拍邮箱必须包含最高层</string>
+    <string name="house_image_door_plate_content_1">1. 打开房门</string>
+    <string name="house_image_door_plate_content_2">2. 门牌号码清晰</string>
+    <string name="house_image_rest_numbers">剩%1$d张没拍</string>
+    <string name="house_image_new_change_house">%1$s室%2$s厅%3$s卫</string>
+
+    <!-- Image viewer -->
+    <string name="image_viewer_title">%1$s(第%2$d张，共%3$d张)</string>
+
+    <!-- activity realse start -->
+    <string name="releasd_sell">发布出售</string>
+    <string name="releasd_rent">发布出租</string>
+    <string name="releasd_change">租售改盘</string>
+    <string name="look_releasd_record">查看发布记录</string>
+    <string name="look_check_record">查看审核记录</string>
+    <string name="get_take_picture_task">看房随手拍</string>
+    <string name="pending_task">待完成任务</string>
+    <string name="look_task_record">查看任务记录</string>
+    <string name="invite_friend">邀请朋友</string>
+    <string name="task_info_titile">任务详情</string>
+    <!-- activity realse end -->
+
+
+    <!-- Publish rent -->
+    <string name="publish_rent_title">发布出租</string>
+
+    <!-- Mine -->
+    <string name="mine_title">我的</string>
+
+    <!-- Publish -->
+    <string name="publish_description">奖惩说明</string>
+    <string name="realse_home_title">房源宝</string>
+    <string name="realse_home_sell">发布出售房源</string>
+    <string name="realse_home_rent">发布出租房源</string>
+    <string name="realse_home_change">出售或出租房源改盘</string>
+
+    <!-- task list -->
+    <string name="task_no_data">暂无该类任务</string>
+    <string name="task_status_completed">已完成</string>
+    <string name="task_status_uncompleted">未完成</string>
+    <string name="task_status_failed">任务失败</string>
+    <string name="task_submit">提交</string>
+    <string name="task_does_not_submit">图片未完成，不能提交</string>
+    <string name="task_does_not_submit_house_info">配套信息未填写，不能提交</string>
+    <string name="task_prepare_submit">准备提交</string>
+    <string name="task_submitting_images">正在上传图片:%1$d/%2$d</string>
+    <string name="task_submit_success">提交成功</string>
+    <string name="task_is_cancelling">正在取消...</string>
+    <string name="upload_change_file">%1$s-%2$s号-%3$s室-%4$s</string>
+    <string name="image_error_io">文件不存在</string>
+    <string name="image_error_format">图片格式错误</string>
+    <string name="image_error_memory">内存不足</string>
+    <string name="image_error_network">无法下载</string>
+    <string name="image_error_unknown">未知原因</string>
+    <string name="house_image_others_limit">最多拍5张</string>
+    <string name="bank_card_title">绑定银行卡</string>
+    <string name="bank_card_dismission_content">请尽快绑定银行卡,便于我们结算奖金发放到您的银行卡</string>
+    <string name="bank_card_name">开户姓名</string>
+    <string name="bank_card_name_content">必须使用以上姓名开户银行卡</string>
+    <string name="bank_card_city">开户城市</string>
+    <string name="bank_card_city_content">必须使用以上城市开户银行卡</string>
+    <string name="bank_card_number">银行卡号</string>
+    <string name="bank_card_number_eg">例：6222 0000 0000 0000</string>
+    <string name="bank_card_bank_name">开户银行</string>
+    <string name="bank_card_bank_name_eg">例：招商银行</string>
+    <string name="bank_card_location">开户支行</string>
+    <string name="bank_card_location_eg">例：常德支行</string>
+    <string name="bank_card_fang_password">房源宝密码</string>
+    <string name="bind_bank_card_commit">绑定</string>
+    <string name="update_bank_card_commit">修改</string>
+    <string name="jump_over_bind_bank_card">跳过</string>
+    <string name="band_bank_card_success">绑定完成</string>
+    <string name="update_bank_card_success">修改完成</string>
+    <string name="band_bank_card_error1">银行卡格式错误</string>
+    <string name="band_bank_card_error2">请输入合法的银行名称</string>
+    <string name="band_bank_card_error3">请输入合法的支行网点名称</string>
+    <string name="band_bank_card_error4">请输入房源宝密码</string>
+    <string name="storage_unable">手机外部存储不可用</string>
+    <string name="select_bank_hint">请输入银行名称</string>
+    <string name="estate_feedback_title">小区问题反馈</string>
+    <string name="estate_feedback_estate_name">小区名</string>
+    <string name="estate_feedback_estate_address">小区地址</string>
+    <string name="estate_feedback_problem_decription">问题描述（选填）</string>
+    <string name="common_problem_title">常见问题</string>
+    <string name="common_problem_rent_rule">发布出租规则</string>
+    <string name="common_problem_sell_rule">发布出售规则</string>
+    <string name="common_problem_award_rule">奖金发放规则</string>
+    <string name="common_problem_month_award_rule_rent">发布出租分级奖励规则</string>
+    <string name="common_problem_month_award_rule_sell">发布出售分级奖励规则</string>
+    <string name="common_problem_review_rule">审核规则</string>
+
+    <!-- 出租月度分级奖励 -->
+    <string name="rent_classification_reward_back">出租月度分级奖励</string>
+    <string name="sell_classification_reward_back">出售月度分级奖励</string>
+    <string name="classification_reward_this_month">本月</string>
+    <string name="classification_reward_last_month">上月</string>
+    <string name="level_reached">当前等级：</string>
+    <string name="the_next_level">下一等级：</string>
+    <string name="every_added_bonus">每套获额外&#160;&#160;%1$s</string>
+    <string name="released_rent_succes">发布出租成功&#160;&#160;%1$s </string>
+    <string name="released_sell_succes">发布出售成功&#160;&#160;%1$s </string>
+    <string name="added_bonus_total">额外奖励共计&#160;&#160;%1$s</string>
+    <string name="Short_of_level_up">还差&#160;%1$s套&#160;晋升至 </string>
+    <string name="added_bonus">每套获额外&#160;%1$s</string>
+    <string name="description">奖金发放说明：分级奖励次月10日统一发放。</string>
+    <string name="miss_level_up">未达到分级奖励要求，再接再厉！</string>
+    <string name="release_time">%s&#160;&#160;发布</string>
+    <string name="luxury_gold">土豪金</string>
+    <string name="Rich_silver">富贵银</string>
+    <string name="landlord_copper">地主铜</string>
+    <string name="month_reward">月度分级奖励</string>
+    <string name="reward_rule">规则</string>
+    <string name="miss_this_no">本月无活动！</string>
+    <string name="miss_last_no">该月无活动！</string>
+    <!--列表-->
+
+    <string name="homesytel">房型</string>
+    <string name="homeprice">价格</string>
+    <string name="homesize">面积</string>
+
+    <!--SetIpFragment -->
+    <string name="settings_success">设置成功</string>
+    <!-- 小区问题反馈 -->
+    <string name="fill_in_estate_name">请填写小区名称</string>
+    <string name="fill_in_estate_address">请填写小区地址</string>
+    <string name="estate_description_too_long">问题描述不能超过100字</string>
+    <string name="estate_feedback_success">感谢您的反馈，我们会尽快处理</string>
+
+    <!-- ChangeNewPhoneNumber -->
+    <string name="change_new_phone_title">取消</string>
+    <string name="change_new_phone">新手机号</string>
+    <string name="change_new_phone_verification">验证码</string>
+    <string name="get_verification">获取验证码</string>
+    <string name="change_new_complete">完成</string>
+    <string name="current_phone_number">当前手机号：%1$s</string>
+    <string name="phone_null_error">请输入手机号!</string>
+    <string name="phone_not_error">手机号码格式不正确!</string>
+    <string name="verification_null_error">请输入手机号!</string>
+    <string name="change_new_phone_text">更换</string>
+
+</resources>

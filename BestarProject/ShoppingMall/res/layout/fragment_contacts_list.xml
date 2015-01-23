@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/info_background"
+        android:clickable="true"
+        android:padding="0dp"
+        android:tag="actionBar" >
+
+        <TextView
+            android:id="@+id/contact_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/text_down_selector"
+            android:drawableLeft="@drawable/ic_action_up_home"
+            android:gravity="center|center_horizontal"
+            android:text="选择联系人"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/next_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/binding_check_selector"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="发送短信(0)"
+            android:textColor="@color/white_action"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <com.manyi.mall.mine.ContactsLetterListView
+        android:id="@+id/MyLetterListView01"
+        android:layout_width="30dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title_view"
+        android:background="#40000000" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_view"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/MyLetterListView01"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/non_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="暂无联系人"
+        android:textSize="36sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

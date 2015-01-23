@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 我的首页 -->
+    <string name="mine_home_titile">我的</string>
+    <string name="mine_balance">账户余额：</string>
+    <string name="mine_withdraw">提现</string>
+    <string name="mine_records">发布记录</string>
+    <string name="mine_invitation_code">我的邀请码:23452</string>
+    <string name="mine_promote">已推广:3人</string>
+    <string name="feedback">意见反馈</string>
+    <string name="mine_exit">退出登录</string>
+    <string name="mine_bonus">奖金</string>
+    <string name="mine_phone_number">手机号</string>
+    <string name="bonus">我的奖金</string>
+    <string name="AliPay">支付宝</string>
+    <string name="AliPay_explain">我们会在审核通或者推广成功之后，24小时内结算转账到您的银行卡，请注意查看您的银行卡账户。</string>
+    <string name="bank_card_info">我们会在审核通过或推广成功之后，尽快进行结算，请注意查看您的账户。</string>
+    <string name="generalize">推广</string>
+    <string name="recommend">推荐房源宝给我的好友</string>
+    <string name="recommend_explain">使用我的邀请码推荐给好友注册成功，各奖10元</string>
+    <string name="other">其他</string>
+    <string name="change_password">修改密码</string>
+    <string name="check_update">检测更新</string>
+    <string name="call_400">客服电话：</string>
+    <string name="common_problem">常见问题</string>
+
+    <!-- 绑定支付宝密码 -->
+    <string name="binding_Alipay">绑定支付宝账号</string>
+    <string name="binding">绑定</string>
+    <string name="binding_explain">支付宝账号</string>
+    <!-- 修改支付宝密码 -->
+    <string name="modification_alipay">修改支付宝账号</string>
+    <string name="modification">修改</string>
+    <string name="modification_hint">房源宝登录密码</string>
+    <!-- 第一次登陆 -->
+    <string name="ignore">跳过</string>
+    <string name="first_explain">您已通过房源宝的身份审核</string>
+    <string name="first_explain2">请尽快绑定支付宝，便于我们结算奖金发放到您的支付宝账号</string>
+    <string name="binding_titile">支付宝账号</string>
+    <!-- 意见反馈 -->
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_send">发送</string>
+    <string name="feedback_please">请输入反馈意见</string>
+    <!-- 任务列表 -->
+    <string name="finish_task_list">已完成任务</string>
+    <string name="ActionRequiredTaskList">待完成任务</string>
+    <string name="help">小帮助：怎么拍照运营MM才会审核通过？</string>
+
+</resources>

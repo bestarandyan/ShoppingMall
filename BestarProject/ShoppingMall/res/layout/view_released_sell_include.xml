@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sell_include"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessLeaf" >
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="@string/released_sell_owner_name"
+            android:textSize="@dimen/common_text_size" />
+
+        <EditText
+            android:id="@+id/sell_include_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:background="@drawable/textview_selector"
+            tools:ignore="TextFields" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessLeaf" >
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="@string/released_sell_owner_phone"
+            android:textSize="@dimen/common_text_size" />
+
+        <com.huoqiu.widget.PhoneEditTextView
+            android:id="@+id/sell_include_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/textview_selector"
+            android:numeric="integer"
+            tools:ignore="TextFields,Deprecated" />
+    </LinearLayout>
+
+</LinearLayout>

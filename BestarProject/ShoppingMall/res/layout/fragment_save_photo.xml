@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e3030"
+    android:clickable="true">
+
+    <!-- 显示预览图形 -->
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/desc" />
+    <!-- 相对布局，放置两个按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/landscape_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#2e3030" 
+        android:visibility="gone">
+
+        <!-- 保存按钮 -->
+
+        <ImageView
+            android:id="@+id/save_picture_landscape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/save_photo_selector"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/desc"
+             />
+
+        <!-- 取消按钮 -->
+
+        <ImageView
+            android:id="@+id/cancel_picture_landscape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/cancel_photo_selector"
+            android:contentDescription="@string/desc"
+            />
+    </RelativeLayout>
+    
+        <RelativeLayout
+        android:id="@+id/protrait_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#2e3030" 
+        android:visibility="gone">
+
+        <!-- 保存按钮 -->
+
+        <ImageView
+            android:id="@+id/save_picture_protrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/save_photo_selector"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/desc"
+             />
+
+        <!-- 取消按钮 -->
+
+        <ImageView
+            android:id="@+id/cancel_picture_protrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/cancel_photo_selector"
+            android:contentDescription="@string/desc"
+            />
+    </RelativeLayout>
+    
+</RelativeLayout>

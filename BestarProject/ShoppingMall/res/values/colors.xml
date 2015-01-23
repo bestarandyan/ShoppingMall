@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_e5e6e8">#e5e6e8</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_gray">#B2B2B2</color>
+    <color name="color_white">#F9F9F9</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_bule">#3300CC</color>
+    <color name="blue">#39A3D5</color>
+    <color name="red">#FD2C26</color>
+    <color name="white">#EFEFEF</color>
+    <color name="black_gray">#484848</color>
+    <color name="my_gray">#EBEBEB</color>
+    <color name="green">#35F12C</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="gold">#b89766</color>
+    <color name="shallow_green">#b89766</color>
+    <color name="sel_green">#5AB1BF</color>
+    <color name="deep_blue">#49B1D1</color>
+    <color name="gray_1">#D0D0D0</color>
+    <color name="house_image_others">#42000000</color>
+    <color name="house_image_red">#e60404</color>
+    <!-- #2F4F4F -->
+    <color name="actionbar">#12c1c4</color>
+    <color name="actionbutton"> #0fa4a7</color>
+    <color name="white_action">#ffffff</color>
+    <color name="tabbarorg">#f5f5f5</color>
+    <color name="tabbarpre">#d0d0d0</color>
+    <color name="textnormal">#7f7f7f</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="type_house_config_white">#ffffff</color>
+    <color name="type_house_config_gray">#efefef</color>
+    <!-- 详情点击 -->
+    <color name="info_text_down">#0fa4a7</color>
+    <color name="info_background">#12c1c4</color>
+    <color name="info_tex">#000000</color>
+    <color name="gettask_submit_pre">#d9a703</color>
+    <color name="gettask_submit_org">#ffc403</color>
+    <!-- 历史记录 -->
+    <color name="record_text_down">#bdc0c1</color>
+    <color name="record_background">#ecf0f1</color>
+    <color name="clean_record_background">#39A3E2</color>
+    <!-- 搜索列表 -->
+    <color name="search_text_down">#bdc0c1</color>
+    <color name="search_background">#fff</color>
+    
+    <color name="search_local_item_pressed_color">#fff</color>
+    <color name="search_local_item_color">#00000000</color>
+    
+    <color name="check_section_pressed">#ebebeb</color>
+    <color name="check_section_not_pressed">#ffffff</color>
+    
+    <color name="district_parent_item_pressed_color">#dd000000</color>
+    <color name="district_parent_item_color">#3d4040</color>
+
+    <!-- 注册 -->
+    <color name="register_background">#ecf0f1</color>
+    <color name="register_title_background">#1abc9c</color>
+    <color name="tetx_title_color">#fff</color>
+    <color name="text_color">#3c3c3c</color>
+    <color name="camera_text">#39a3e2</color>
+
+    <!-- 发布出售 -->
+    <color name="released_sell_xtitle_text">#7f7f7f</color>
+    <color name="serach_title_text">#7f7f7f</color>
+    <color name="release_bg_color">#e5e6e8</color>
+    <color name="release_nextbtn_bgcolor_check">#e5b003</color>
+    <color name="release_nextbtn_bgcolor">#ffc403</color>
+    <!-- 条件筛选 -->
+    <color name="select">#d0d0d0</color>
+    <color name="moren">#f5f5f5</color>
+    <!-- 我的 -->
+    <color name="mineselect">#bdc0c1</color>
+    <color name="minemoren">#ecf0f1</color>
+
+    <!-- 启动页 -->
+    <color name="splash">#12c1c4</color>
+    <!-- 绑定支付宝账号 -->
+    <color name="binding_check">#e5b003</color>
+    <color name="binding">#ffc403</color>
+
+    <!-- ActionBar 二位字的点击颜色切换 -->
+    <color name="background">#ffe281</color>
+    <color name="click_color">#ffc403</color>
+    <color name="down_color">#d9a703</color>
+
+    <!-- 发现详请  - 修改 -->
+    <color name="rent_record_background">#e5e6e8</color>
+
+    <!-- 链接文字颜色点击切换 -->
+    <color name="button_background">#39a3e2</color>
+    <color name="click_down_color">#d3d4d6</color>
+
+    <!-- 审核中  - 审核失败 -->
+    <color name="review_background">#e5e6e8</color>
+    <color name="review_actionbar_background">#12c1c4</color>
+    <color name="review_actionbar_pressed">#0fa4a7</color>
+    <color name="review_content_color1">#3c3c3c</color>
+    <color name="review_content_color2">#7f7f7f</color>
+    <color name="color_ff_000000">#ff000000</color>
+    <color name="color_ff_3995e3">#ff3995e3</color>
+    <color name="color_ff_6f6f6f">#ff6f6f6f</color>
+    <color name="color_ff_de4125">#ffde4125</color>
+    <!-- 链接的颜色 -->
+    <color name="link">#39a3e2</color>
+    <color name="take_image_pressed_color">#ebeeee</color>
+    <!-- 列表页item点击事件 -->
+    <color name="task_list_item_clikable">#00FFFFFF</color>
+    <color name="task_list_item_unclik">#e5e6e8</color>
+    <color name="Transparent_bottom">#bfffffff</color>
+    <color name="recordselect">#EBEBEB</color>
+    <color name="record">#fff</color>
+    <color name="new_styel_award">#8a000000</color>
+    <color name="raward_red">#ff5104</color>
+
+</resources>

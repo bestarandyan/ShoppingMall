@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="longin">登录</string>
+    <string name="Lback">返回</string>
+    <string name="longin_hint">请输入11位手机号码</string>
+    <string name="Longing_password_hint">请输入密码</string>
+    <string name="Login_phone">手机号:</string>
+    <string name="Login_password">密码:</string>
+    <string name="Login_forget">忘记密码?</string>
+    <string name="logining">登录</string>
+
+    <color name="dialog">#ffffff</color>
+
+    <string name="title">看房助手</string>
+
+</resources>

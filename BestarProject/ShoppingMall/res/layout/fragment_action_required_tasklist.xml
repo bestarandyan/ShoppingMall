@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_required_loaddinng"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/actionbar"
+        android:padding="0dp"
+        android:tag="actionBar" >
+
+        <Button
+            android:id="@+id/action_task_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/text_down_selector"
+            android:drawableLeft="@drawable/ic_action_up_home"
+            android:text="@string/ActionRequiredTaskList"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/top" >
+
+        <com.huoqiu.widget.pullrefresh.PullToRefreshListView
+            android:id="@+id/action_required_taskList"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#d1d5d8"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" >
+        </com.huoqiu.widget.pullrefresh.PullToRefreshListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/task_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/nodata_action_task"
+            android:textColor="#7f7f7f"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:autoLink="web"
+        android:gravity="center"
+        android:text="@string/help"
+        android:textColor="#7f7f7f"
+        android:textSize="16sp" />
+
+</RelativeLayout>

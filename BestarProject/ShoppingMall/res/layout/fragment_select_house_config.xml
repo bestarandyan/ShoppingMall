@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#EBEEEE"
+    >
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/info_background"
+         >
+
+        <TextView
+            android:id="@+id/select_save_btn"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/released_nextbtn_selector"
+            android:gravity="center"
+            android:text="@string/amend_houseinfo_savebtn"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/select_back"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/text_down_selector"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_action_up_home"
+            android:gravity="center"
+            android:text="@string/select_house_config_backbtn"
+            android:textColor="@color/tetx_title_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+	<com.huoqiu.widget.pinnedlistview.PinnedHeaderListView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/listView"
+	    >
+	    
+	</com.huoqiu.widget.pinnedlistview.PinnedHeaderListView>
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_background"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:background="@color/info_background"
+            android:padding="0dp"
+            android:tag="actionBar"
+            tools:ignore="UselessParent" >
+
+            <TextView
+                android:id="@+id/register_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/text_down_selector"
+                android:drawableLeft="@drawable/ic_action_up_home"
+                android:gravity="center|center_horizontal"
+                android:text="@string/register_one"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent" >
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/textview_selector"
+                    android:gravity="center|left"
+                    android:hint="@string/register_phone_number"
+                    android:maxLength="11"
+                    android:numeric="integer"
+                    android:textSize="16sp"
+                    tools:ignore="TextFields,Deprecated" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_unable_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:text="无效的手机号码"
+                android:textColor="#ff4404"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent" >
+
+                <EditText
+                    android:id="@+id/sms_captcha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_selector"
+                    android:gravity="center|left"
+                    android:hint="@string/register_captcha"
+                    android:maxLength="6"
+                    android:numeric="integer"
+                    android:textSize="16sp"
+                    tools:ignore="TextFields,Deprecated" />
+
+                <Button
+                    android:id="@+id/sms_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/start_selector"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:singleLine="true"
+                    android:text="@string/register_get_captcha"
+                    android:textColor="@color/tetx_title_color"
+                    android:textSize="16sp"
+                    tools:ignore="InefficientWeight" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent" >
+
+                <EditText
+                    android:id="@+id/register_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/textview_selector"
+                    android:gravity="center|left"
+                    android:hint="@string/password_size"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textSize="16sp"
+                    tools:ignore="TextFields,Deprecated" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent" >
+
+                <EditText
+                    android:id="@+id/confirm_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/textview_selector"
+                    android:gravity="center|left"
+                    android:hint="@string/register_confirm_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:password="true"
+                    android:textSize="16sp"
+                    tools:ignore="TextFields,Deprecated" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/start_selector"
+                android:text="@string/register_next"
+                android:textColor="@color/tetx_title_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

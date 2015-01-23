@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:background="#ffffff"
+        android:id="@+id/houseTypeLayout1"
+        >
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="毛坯"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            />
+        <CheckBox android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:id="@+id/houseType1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+    
+	<View android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#D5D5D5"
+	    />
+    
+	<View android:layout_width="match_parent"
+	    android:layout_height="0.1dp"
+	    android:background="#D5D5D5"
+	    android:layout_marginTop="32dp"
+	    />
+</LinearLayout>

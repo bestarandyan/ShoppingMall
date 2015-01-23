@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/search_living_area_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_list_history"
+            android:visibility="gone"/>
+
+    <ImageView
+            android:id="@+id/search_living_area_item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_list_arrow_right"
+            android:visibility="gone"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/search_living_area_item_arrow"
+            android:layout_toRightOf="@id/search_living_area_history"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/hotCityTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="#ff5104"
+                    android:text="[热点]"
+                    android:textSize="16sp"/>
+
+            <TextView
+                    android:id="@+id/search_living_area_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="#3d4040"
+                    android:text="普陀-大华"
+                    android:textSize="16sp"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/area_district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:textColor="#8a000000"
+                android:text="普陀-大华"
+                android:textSize="13sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

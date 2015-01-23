@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spring-security-crypto">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ShoppingMall/libs/spring-security-crypto.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

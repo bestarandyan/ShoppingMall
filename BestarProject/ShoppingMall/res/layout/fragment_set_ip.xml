@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ipLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="IP :"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/mIpEdt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入IP" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/portLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Port :"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/mPortEdt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入端口号" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mSaveIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/start_selector"
+        android:text="保存IP"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

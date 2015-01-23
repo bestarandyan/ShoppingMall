@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fullscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/sidebar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:weightSum="1" >
+
+        <ListView
+            android:id="@+id/short_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#3D4040"
+            android:divider="#000"
+            android:dividerHeight="1dp" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mine_record_back">发布记录</string>
+    <string name="checked_record_title">发布记录</string>
+    <string name="check_record_title">审核记录</string>
+    <string name="mine_record_title">发布记录</string>
+    <string name="mine_record_clear">清除</string>
+    <string name="none_data">无发布记录</string>
+    <string name="null_data">无奖金记录</string>
+    <string name="add_estate">小区</string>
+    <string name="realse_records">房源</string>
+    <!-- 待完成任务列表 -->
+    <string name="nodata_action_task">无待完成任务</string>
+    <string name="nodata_finish_task">无已完成任务</string>
+
+</resources>

@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/info_background"
+        >
+
+        
+        <TextView
+            android:id="@+id/bt_clear"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/ic_action_up_search"
+            android:background="@drawable/text_down_selector"
+            android:gravity="center"
+            android:clickable="true"
+            android:textColor="@color/tetx_title_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/search_edtext"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignTop="@+id/bt_clear"
+            android:layout_toRightOf="@+id/bt_clear"
+            android:background="@drawable/bg_searchfield"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:drawablePadding="5dip"
+            android:singleLine="true"
+            android:ems="10"
+            android:hint="@string/search_hint"
+            android:paddingLeft="5dip"
+            tools:ignore="TextFields" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/search_item_down_selector"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:background="#ecf0f1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/search_recent_title"
+            android:textColor="@color/black_gray"
+            tools:ignore="HardcodedText" />
+        
+        
+      
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#d1d5d8" />
+
+        <TextView
+            android:id="@+id/tv_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/search__local_nohistory"
+            android:textColor="@color/black_gray"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+        <ListView
+            android:id="@+id/lv_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:background="@drawable/search_record_item_down_selector"
+            android:divider="#d1d5d8"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:scrollbars="none"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="10dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/norearoe"
+            android:textColor="@color/serach_title_text"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/serch_add"
+            android:layout_width="135dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/start_selector"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/newarea"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</LinearLayout>

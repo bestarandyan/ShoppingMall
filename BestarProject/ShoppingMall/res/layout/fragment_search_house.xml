@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6f2f2"
+    android:orientation="vertical" >
+
+    <RelativeLayout		android:id="@+id/search_house_title_layout"	
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/actionbar" >
+
+        <TextView
+            android:id="@+id/search_house_sell"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/main_title_selector"
+            android:gravity="center|center_horizontal"
+            android:text="@string/main_title_sell"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/search_house_seperator"
+            android:layout_width="0.6dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/search_house_sell"
+            android:background="#8affffff" />
+
+        <TextView
+            android:id="@+id/search_house_rent"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/search_house_seperator"
+            android:background="@drawable/main_title_selector"
+            android:gravity="center|center_horizontal"
+            android:text="@string/main_title_rent"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        
+        <ImageView 
+            android:id="@+id/search_house_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/actionbar_switch_arrow"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#e6f2f2" >
+	    <RelativeLayout 
+	        android:id="@+id/main_search"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	       	android:layout_marginBottom="8dip"
+	        android:layout_marginLeft="8dp"
+	        android:layout_marginRight="8dp"
+	        android:layout_marginTop="8dp">
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="40dp"
+	            android:padding="8dp"
+	            android:textSize="16sp"
+	            android:textColor="#42000000"
+	            android:text="@string/search_house_search_key"
+	            android:background="@drawable/searchfield_bg" >
+	        </TextView>
+	        
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/searchfield_ic_search"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"/>
+	
+	    </RelativeLayout>
+	
+	    <TextView
+	        android:id="@+id/main_recnet_search_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="48dp"
+	        android:layout_marginLeft="12dp"
+	        android:gravity="center_vertical"
+	        android:textSize="14sp"
+	        android:textColor="#42000000"
+	        android:text="@string/main_recent_search" />
+	
+	    <ListView
+	        android:id="@android:id/list"
+	        android:padding="8dp"
+	        android:background="#e6f2f2"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:divider="#1f000000"
+	        android:listSelector="@drawable/search_item_selector"
+	        android:focusable="true"
+	        android:dividerHeight="0.5dp" />
+	</LinearLayout>
+</LinearLayout>

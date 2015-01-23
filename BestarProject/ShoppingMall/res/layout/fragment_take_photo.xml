@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:id="@+id/FrameLayout1"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#2e3030">  
+    <!-- 显示预览图形 -->  
+    <SurfaceView   
+        android:id="@+id/surfaceView"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_centerInParent="true"
+        /> 
+
+    <!-- 相对布局，放置两个按钮 -->  
+        <RelativeLayout  
+            android:id="@+id/buttonLayout"  
+            android:layout_width="118dp"  
+            android:layout_height="match_parent" 
+            android:layout_alignParentRight="true"
+       		android:clickable="true"
+    		android:background="#2e3030">  
+        <!-- 拍照按钮 -->  
+        <ImageView   
+            android:id="@+id/takepicture"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content" 
+            android:layout_centerInParent="true"
+            android:background="@drawable/take_photo_selector"
+            />
+       <!-- 闪光灯按钮 -->  
+        <ImageView   
+            android:id="@+id/flash_mode" 
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="-90"
+            android:background="@drawable/ic_action_flash_off"
+           />  
+    </RelativeLayout> 
+            <ImageView   
+            android:id="@+id/focus_area"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content" 
+            android:layout_centerInParent="true"
+            android:background="@drawable/camera_focusing"
+            android:visibility="gone"/> 
+</RelativeLayout>

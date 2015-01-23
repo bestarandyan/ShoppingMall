@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Native_Libs1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Framework/libs/Native_Libs1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

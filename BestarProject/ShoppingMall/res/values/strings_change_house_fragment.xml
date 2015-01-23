@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <string name="change_house_back">返回</string>
+    <string name="change_house_district_name">小区名称</string>
+    <string name="change_house_building">栋座号</string>
+    <string name="change_house_room">室号</string>
+    <string name="change_house_next">下一步</string>
+    
+    
+     <string name="change_house_area_name">小区名称</string>
+    <string name="change_house_seat_number">栋座号</string>
+    <string name="change_house_room_no">室号</string>
+    <string name="change_house_room_number">(门牌号)</string>
+    <string name="change_house_unit_no">单元号</string>
+    
+    <string name="change_house_describes">若无小区名称，使用地址替代，例如“武定西路1200弄”</string>
+    <string name="change_house_desc_line2">栋座号使用数字，独栋则勾选“独栋”</string>
+    <string name="change_house_desc_line3">室号使用数字，如“1A”需填写“101”室</string>
+    <string name="change_house_desc_line4">若该小区只有一栋楼,请选择"小区单栋"</string>
+    <string name="change_house_desc_line5">若该楼不分单元,请选择无单元</string>
+    
+    
+    
+    <string name="change_house_cancel">取消</string>
+     <string name="change_houses">改盘</string>
+    <string name="change_house_submit">提交</string>
+    <string name="change_house_describe">改盘指出售或出租状态的房源，因为交易成功或业主改变出售出租意向的情况下，修改其租售状态，通过审核后获得返利。</string>
+    <string name="change_house_housing">改盘房源</string>
+    <string name="change_house_status">租售状态</string>
+    <string name="change_house_sell_info">出售改盘</string>
+    <string name="change_house_sell">该房源已出售</string>
+    <string name="change_house_no_sell">业主不想出售了</string>
+    <string name="change_house_rent_info">出租改盘</string>
+    <string name="change_house_rent">该房源已出租</string>
+    <string name="change_house_no_rent">业主不想出租了</string>
+    <string name="change_house_owner">业主信息</string>
+    <string name="change_house_owner_name">业主姓名</string>
+    <string name="change_house_owner_phone">联系电话</string>
+    <string name="change_house_reason">改盘理由</string>
+    <string name="change_house_fill_reason" tools:ignore="TypographyEllipsis">请填写改盘理由...</string>
+    
+    
+    
+    
+</resources>

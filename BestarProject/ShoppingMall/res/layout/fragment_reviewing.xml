@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/review_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/review_actionbar_background"
+        android:orientation="horizontal"
+        android:tag="actionBar"
+        tools:ignore="UselessParent" >
+
+        <Button
+            android:id="@+id/btn_exit_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/review_exit_selector"
+            android:text="@string/exit_login"
+            android:textColor="@color/tetx_title_color"
+            android:gravity="center_vertical"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/text_down_selector"
+            android:drawableLeft="@drawable/launcher_icon"
+            android:gravity="center"
+            android:text="@string/fang_yuan_bao"
+            android:textColor="@color/tetx_title_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="56dip"
+        android:gravity="center"
+        android:text="@string/reviewing"
+        android:textColor="@color/review_content_color1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dip"
+        android:gravity="center"
+        android:text="@string/reviewing_det"
+        android:textColor="@color/review_content_color2"
+        android:textSize="14sp" />
+
+</LinearLayout>
